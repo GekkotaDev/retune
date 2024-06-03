@@ -1,0 +1,56 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt generate",
+    "build:nuxt": "nuxt generate",
+    "build:stories": "histoire build",
+    "cleanup": "nuxt cleanup",
+    "dev": "concurrently -r -i -k \"tauri dev\" \"nuxt dev\"",
+    "dev:nuxt": "nuxt dev",
+    "dev:stories": "histoire dev",
+    "generate": "nuxt generate",
+    "generate:nuxt": "nuxt generate",
+    "generate:code": "plop",
+    "info": "nuxt info",
+    "preview": "nuxt preview",
+    "preview:nuxt": "nuxt preview",
+    "preview:stories": "histoire preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "nuxt cleanup && nuxt prepare",
+    "test": "nuxt test",
+    "typecheck": "nuxt typecheck",
+    "upgrade": "nuxt upgrade",
+    "n": "nuxt",
+    "g": "plop",
+    "c": "concurrently"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.0.18",
+    "@radix-icons/vue": "^1.0.0",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tanstack/vue-query": "^5.32.0",
+    "@tanstack/vue-query-devtools": "^5.32.0",
+    "@tauri-apps/api": "2.0.0-beta.13",
+    "clrc": "^3.1.4",
+    "fast-average-color": "^9.4.0",
+    "music-metadata-browser": "^2.5.10",
+    "nuxt": "^3.11.2",
+    "vue-use-gesture": "^1.0.1",
+    "workerpool": "^9.1.1"
+  },
+  "devDependencies": {
+    "@histoire/plugin-nuxt": "^0.17.17",
+    "@histoire/plugin-vue": "^0.17.17",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "@tauri-apps/cli": "2.0.0-beta.13",
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@types/node": "^20.11.30",
+    "@vue/test-utils": "^2.4.5",
+    "msw": "^2.2.14",
+    "tailwindcss-animate": "^1.0.7",
+    "eslint-config-repo-legacy": "workspace:*"
+  }
+}
+

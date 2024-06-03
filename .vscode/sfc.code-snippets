@@ -1,0 +1,30 @@
+{
+  "Setup Script": {
+    "prefix": "setup",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$0",
+      "</script>",
+    ],
+    "scope": "vue"
+  },
+
+  "Template": {
+    "prefix": "template",
+    "body": [
+      "<template>",
+      "\t$0",
+      "</template>"
+    ],
+    "scope": "vue",
+  },
+
+  "Style": {
+    "prefix": "style",
+    "body": [
+      "<style scoped>",
+      "$0",
+      "</style>"
+    ]
+  }
+}
